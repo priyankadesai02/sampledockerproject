@@ -3,8 +3,7 @@ pipeline{
 	{
     		registry = "priyankadesai02/newapp"
    		registryCredential = 'Priyanka02'
-		dockerImage = ''
-  	}
+	}
 	agent any
 		tools
 		{
