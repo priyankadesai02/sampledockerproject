@@ -2,7 +2,8 @@ pipeline{
 	environment 
 	{
     		registry = "priyankadesai02/newapp"
-   		registryCredential = 'priyankadesai02'
+   		registryCredential = 'Priyanka02'
+		dockerImage = ''
   	}
 	agent any
 		tools
@@ -36,10 +37,8 @@ pipeline{
    				 script
 				 {
       					docker.withRegistry( '', registryCredential ) 
-					{
-						dockerImage.push()
-					}
-    				}
+					dockerImage.push()
+				 }
 			}
 		}
 	}
