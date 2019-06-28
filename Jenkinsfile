@@ -2,7 +2,7 @@ pipeline{
 	environment 
 	{
     		registry = "priyankadesai02/newapp"
-   		registryCredential = 'docker-hub-credentials'
+   		registryCredential = 'dockerhub'
 	}
 	agent any
 		tools
