@@ -1,7 +1,7 @@
 pipeline{
 	environment 
 	{
-    		registry = "priyankadesai02/NewApp"
+    		registry = "priyankadesai02/newapp"
    		registryCredential = 'Priyanka02'
   	}
 	agent any
