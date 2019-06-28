@@ -1,4 +1,9 @@
 pipeline{
+	environment 
+	{
+    		registry = "priyankadesai02/NewApp"
+   		registryCredential = 'Priyanka02'
+  	}
 	agent any
 		tools
 		{
@@ -13,11 +18,6 @@ pipeline{
 			{
 				sh 'mvn clean install'
 			}
-		}
-		stage('Push to Docker Registery')
-		{
-			withCredentials([usernamePassword(credentialsId: 'dockerHubAccount', usernameVariable: 'priyankadesai02', passwordVariable: 'Priyanka02')])
-			pushToImage(tomcatApp, Projectpipe, priyankadesai02, Priynka02)
 		}
 	}
 	
